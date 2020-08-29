@@ -13,7 +13,9 @@ function Home() {
               <span>Unique</span>
             </div>
             <div className='home_hireme'>
-              <a href='#'>Hire Us</a>
+              <a href='#' className='stylish'>
+                Hire Us
+              </a>
             </div>
           </div>
           <div className='home_pics'>
