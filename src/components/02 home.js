@@ -13,7 +13,7 @@ function Home() {
               <span>Unique</span>
             </div>
             <div className='home_hireme'>
-              <a href='#' className='stylish'>
+              <a href='#' className='stylish' data-text='Hire Us'>
                 Hire Us
               </a>
             </div>
