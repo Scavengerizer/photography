@@ -1,12 +1,10 @@
 import React from "react";
-import logo from "../assets/images/logo.png";
 
 function Footer() {
   return (
     <footer>
       <div className='container'>
         <div className='col center'>
-          <img src={logo} alt='' />
           <div className='footer-text'>
             <div className='row center'>
               <h4>Terms</h4>
