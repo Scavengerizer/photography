@@ -1,5 +1,6 @@
 import React from "react";
 import img6 from "../assets/images/6.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -13,9 +14,9 @@ function Home() {
               <span>Unique</span>
             </div>
             <div className='home_hireme'>
-              <a href='#' className='stylish' data-text='Hire Us'>
+              <Link to='#' className='stylish' data-text='Hire Us'>
                 Hire Us
-              </a>
+              </Link>
             </div>
           </div>
           <div className='home_pics'>

@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/01 header";
 import Home from "./components/02 home";
 import Work from "./components/03 work";
@@ -9,13 +10,15 @@ import "./styles/app.scss";
 
 function App() {
   return (
-    <div className='App'>
-      <Header />
-      <Home />
-      <Work />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <div className='App'>
+        <Header />
+        <Home />
+        <Work />
+        <Contact />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
