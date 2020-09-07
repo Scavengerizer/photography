@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -67,12 +68,14 @@ function Contact() {
                 <div className='checkbox row'>
                   <div className='custom_checkbox'>
                     <input type='checkbox'></input>
-                    <span class='checkmark'></span>
+                    <span className='checkmark'></span>
                   </div>
                   <div className='label_text'>
                     <p>
-                      By signing up, you agree to our <a>Privacy Policy</a>
-                      <br /> and <a>Terms</a> on how your data is used.
+                      By signing up, you agree to our{" "}
+                      <Link to='#'>Privacy Policy</Link>
+                      <br /> and <Link to='#'>Terms</Link> on how your data is
+                      used.
                     </p>
                   </div>
                 </div>
