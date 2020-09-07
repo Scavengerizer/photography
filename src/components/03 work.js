@@ -16,7 +16,7 @@ function Work() {
             <div className='fixed_block_contents'>
               <div className='icono-arrow1'></div>
               <div className='back_to_top'>
-                <a href='#'>Back To Top</a>
+                <Link to='#'>Back To Top</Link>
               </div>
             </div>
           </div>
