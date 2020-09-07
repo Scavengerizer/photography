@@ -13,10 +13,21 @@ function App() {
     <Router>
       <div className='App'>
         <Header />
-        <Home />
-        <Work />
-        <Contact />
-        <Footer />
+        <Switch>
+          <Route path='/' exact>
+            <Home />
+            <Work />
+            <Contact />
+            <Footer />
+          </Route>
+          <Route path='/work' exact>
+            <Work />
+          </Route>
+          <Route path='/contact' exact>
+            <Contact />
+            <Footer />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
