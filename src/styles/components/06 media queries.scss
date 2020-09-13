@@ -14,6 +14,18 @@
       }
     }
   }
+  .home {
+    .home_contents {
+      justify-content: center;
+      margin-right: 1em;
+      .home_pics {
+        display: none;
+      }
+    }
+    .home_message {
+      display: none;
+    }
+  }
 }
 
 // 768px
@@ -33,6 +45,17 @@
       }
     }
   }
+  .home {
+    .home_contents {
+      .home_text {
+        .home_title {
+          span {
+            font-size: 7rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 // 414px
@@ -48,6 +71,22 @@
         .link {
           font-size: 0.85rem;
           margin: 0 1.75em;
+        }
+      }
+    }
+  }
+  .home {
+    .home_contents {
+      padding: 0em 0 5em 0;
+
+      .home_text {
+        .home_title {
+          span {
+            font-size: 6rem;
+          }
+        }
+        .home_hireme {
+          margin-top: 4em;
         }
       }
     }
