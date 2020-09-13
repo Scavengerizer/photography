@@ -1,0 +1,55 @@
+//1368px
+@media (max-width: $surfacepro) {
+  header {
+    .header_contents {
+      .logo {
+        span {
+          font-size: 5rem;
+        }
+      }
+      .nav-links {
+        .link {
+          margin: 0 4.5em;
+        }
+      }
+    }
+  }
+}
+
+// 768px
+@media (max-width: $ipadmini) {
+  header {
+    .header_contents {
+      .logo {
+        span {
+          font-size: 3.5rem;
+        }
+      }
+      .nav-links {
+        .link {
+          display: inline-block;
+          margin: 0 2.7em;
+        }
+      }
+    }
+  }
+}
+
+// 414px
+@media (max-width: $iphone11promax) {
+  header {
+    .header_contents {
+      .logo {
+        span {
+          font-size: 2.5rem;
+        }
+      }
+      .nav-links {
+        .link {
+          font-size: 0.85rem;
+          margin: 0 1.75em;
+        }
+      }
+    }
+  }
+}
