@@ -1,5 +1,5 @@
 .work {
-  margin-top: 15.5em;
+  margin-top: 10.5em;
   margin-bottom: 15.5em;
   .our_work_text {
     h6 {
@@ -23,7 +23,7 @@
   .fixed_block {
     margin-top: 10em;
     position: relative;
-    width: 300px;
+    width: 500px;
     height: 2500px;
     .fixed_block_contents {
       margin-top: 10em;
@@ -63,10 +63,13 @@
           transform: rotate(-90deg);
           margin-top: 15em;
         }
-        .pic_text {
+        .work_grid {
           margin-left: 5em;
-
-          width: 50%;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+        }
+        .work_grid_1 {
           .pic_number {
             color: $darkgrey;
             opacity: 0.8;
@@ -77,15 +80,22 @@
             color: $darkpurple;
             font: 9rem $Vibe;
           }
-          .pic_desc {
+        }
+        .work_grid_2 {
+          p {
             margin-top: 3em;
             width: 70%;
             color: $lightpurple;
             font: 400 1.5rem $Pop;
           }
         }
-        .pic_image {
-          width: 50%;
+        .work_grid_3 {
+          grid-row: 1/3;
+          grid-column: 2/3;
+          .pic_image {
+            margin-top: 7em;
+            width: 100%;
+          }
         }
       }
     }

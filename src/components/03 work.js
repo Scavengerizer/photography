@@ -23,16 +23,19 @@ function Work() {
           <div className='work_samples'>
             <div className='sample row'>
               <div className='date_of_pic'>23/05/10</div>
-              <div className='pic_text'>
-                <div className='pic_number'>
-                  <span>01</span>
+              <div className='work_grid'>
+                <div className='work_grid_1'>
+                  <div className='pic_number'>
+                    <span>01</span>
+                  </div>
+                  <div className='pic_heading'>
+                    <span>Wild</span>
+                    <br></br>
+                    <span>Dazzle</span>
+                  </div>
                 </div>
-                <div className='pic_heading'>
-                  <span>Wild</span>
-                  <br></br>
-                  <span>Dazzle</span>
-                </div>
-                <div className='pic_desc'>
+
+                <div className='work_grid_2'>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -40,23 +43,29 @@ function Work() {
                     printer took
                   </p>
                 </div>
-              </div>
-              <div className='pic_image col center'>
-                <img src={img1} alt='' />
+
+                <div className='work_grid_3'>
+                  <div className='pic_image col center'>
+                    <img src={img1} alt='' />
+                  </div>
+                </div>
               </div>
             </div>
             <div className='sample row'>
               <div className='date_of_pic'>04/02/20</div>
-              <div className='pic_text'>
-                <div className='pic_number'>
-                  <span>02</span>
+              <div className='work_grid'>
+                <div className='work_grid_1'>
+                  <div className='pic_number'>
+                    <span>02</span>
+                  </div>
+                  <div className='pic_heading'>
+                    <span>Augmented</span>
+                    <br></br>
+                    <span>Desire</span>
+                  </div>
                 </div>
-                <div className='pic_heading'>
-                  <span>Augmented</span>
-                  <br></br>
-                  <span>Desire</span>
-                </div>
-                <div className='pic_desc'>
+
+                <div className='work_grid_2'>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -64,24 +73,30 @@ function Work() {
                     printer took
                   </p>
                 </div>
-              </div>
-              <div className='pic_image col center'>
-                <img src={img2} alt='' />
+
+                <div className='work_grid_3'>
+                  <div className='pic_image col center'>
+                    <img src={img2} alt='' />
+                  </div>
+                </div>
               </div>
             </div>
 
             <div className='sample row'>
               <div className='date_of_pic'>01/05/20</div>
-              <div className='pic_text'>
-                <div className='pic_number'>
-                  <span>03</span>
+              <div className='work_grid'>
+                <div className='work_grid_1'>
+                  <div className='pic_number'>
+                    <span>03</span>
+                  </div>
+                  <div className='pic_heading'>
+                    <span>Sumptuous</span>
+                    <br></br>
+                    <span>Structures</span>
+                  </div>
                 </div>
-                <div className='pic_heading'>
-                  <span>Sumptuous</span>
-                  <br></br>
-                  <span>Structures</span>
-                </div>
-                <div className='pic_desc'>
+
+                <div className='work_grid_2'>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
@@ -89,9 +104,12 @@ function Work() {
                     printer took
                   </p>
                 </div>
-              </div>
-              <div className='pic_image col center'>
-                <img src={img3} alt='' />
+
+                <div className='work_grid_3'>
+                  <div className='pic_image col center'>
+                    <img src={img3} alt='' />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

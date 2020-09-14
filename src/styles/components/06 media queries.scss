@@ -26,6 +26,51 @@
       display: none;
     }
   }
+  .work {
+    .fixed_block {
+      display: none;
+    }
+    .work_contents {
+      .work_samples {
+        .sample {
+          .date_of_pic {
+            margin-left: 0;
+            font-size: 1rem;
+          }
+          .work_grid {
+            margin-left: 6em;
+          }
+          .work_grid_1 {
+            .pic_number {
+              font-size: 1.75rem;
+            }
+            .pic_heading {
+              font-size: 7rem;
+            }
+          }
+          .work_grid_2 {
+            p {
+              font-size: 1.25rem;
+            }
+          }
+          .work_grid_3 {
+            margin-left: 2em;
+            .pic_image {
+              min-width: 350px;
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+    .work_message {
+      display: none;
+    }
+  }
+}
+
+// Custom Media Queries
+@media (max-width: 1000px) {
 }
 
 // 768px
