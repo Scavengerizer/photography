@@ -56,7 +56,7 @@
           .work_grid_3 {
             margin-left: 2em;
             .pic_image {
-              min-width: 350px;
+              min-width: 300px;
               width: 70%;
             }
           }
@@ -71,6 +71,56 @@
 
 // Custom Media Queries
 @media (max-width: 1000px) {
+  .work {
+    .work_contents {
+      .work_samples {
+        .sample {
+          margin-top: 3em;
+          margin-bottom: -10em;
+          .date_of_pic {
+            display: none;
+          }
+          .work_grid {
+            margin: 0 auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+          }
+          .work_grid_1 {
+            grid-row: 1/2;
+            grid-column: 1/2;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .pic_heading {
+              margin: 0 auto;
+            }
+          }
+          .work_grid_2 {
+            grid-row: 3/4;
+            grid-column: 1/2;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            p {
+              margin: 0 auto;
+              margin-top: 5em;
+              width: 50%;
+            }
+          }
+          .work_grid_3 {
+            grid-row: 2/3;
+            grid-column: 1/2;
+            margin: 0 auto;
+            .pic_image {
+              margin: 0 auto;
+              width: 400px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // 768px
@@ -96,6 +146,31 @@
         .home_title {
           span {
             font-size: 7rem;
+          }
+        }
+      }
+    }
+  }
+  .work {
+    .work_contents {
+      .work_samples {
+        .sample {
+          margin-bottom: 0em;
+
+          .work_grid_1 {
+            .pic_heading {
+              span {
+                font-size: 6rem;
+              }
+            }
+            .pic_number {
+              font-size: 1.5rem;
+            }
+          }
+          .work_grid_3 {
+            .pic_image {
+              width: 330px;
+            }
           }
         }
       }
@@ -132,6 +207,38 @@
         }
         .home_hireme {
           margin-top: 4em;
+        }
+      }
+    }
+  }
+  .work {
+    .work_contents {
+      .work_samples {
+        .sample {
+          margin-bottom: 7em;
+
+          .work_grid_1 {
+            .pic_heading {
+              span {
+                font-size: 5rem;
+              }
+            }
+            .pic_number {
+              font-size: 1.25rem;
+            }
+          }
+          .work_grid_2 {
+            p {
+              width: 70%;
+              font-size: 1rem;
+              line-height: 1.7;
+            }
+          }
+          .work_grid_3 {
+            .pic_image {
+              width: 300px;
+            }
+          }
         }
       }
     }
