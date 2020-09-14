@@ -1,5 +1,5 @@
 import React from "react";
-import img6 from "../assets/images/6.png";
+import img1 from "../assets/images/1.png";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -20,7 +20,7 @@ function Home() {
             </div>
           </div>
           <div className='home_pics'>
-            <img src={img6} alt='' />
+            <img src={img1} alt='' />
           </div>
         </div>
         <div className='home_message'>
