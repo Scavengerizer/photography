@@ -176,6 +176,33 @@
       }
     }
   }
+  footer {
+    .col {
+      .footer_logo {
+        span {
+          font-size: 2rem;
+        }
+      }
+      .footer_links {
+        margin-left: 1.5em;
+        a {
+          padding: 0 3em;
+          font-size: 0.8rem;
+        }
+      }
+      .footer_policies {
+        a {
+          padding: 0 2em;
+          font-size: 0.6rem;
+        }
+      }
+      .footer_copyright {
+        span {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
 }
 
 // 414px
@@ -216,7 +243,6 @@
       .work_samples {
         .sample {
           margin-bottom: 7em;
-
           .work_grid_1 {
             .pic_heading {
               span {
@@ -239,6 +265,20 @@
               width: 300px;
             }
           }
+        }
+      }
+    }
+  }
+  footer {
+    .col {
+      .footer_links {
+        a {
+          padding: 0 2em;
+        }
+      }
+      .footer_policies {
+        a {
+          padding: 0 1em;
         }
       }
     }
