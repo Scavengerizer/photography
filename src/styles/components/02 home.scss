@@ -55,4 +55,30 @@
       right: 0;
     }
   }
+  .overlay {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .overlay-text {
+      color: white;
+      font-size: 3.5rem;
+      font-family: $Pop;
+      font-weight: 600;
+      .hide {
+        background-color: black;
+        overflow: hidden;
+      }
+      .hide span {
+        transform: translateY(100%);
+        display: inline-block;
+      }
+    }
+  }
 }

@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import gsap from "gsap";
 import img1 from "../assets/images/1.png";
 import { Link } from "react-router-dom";
 
 function Home() {
+  useEffect(() => {
+    // prevent flashing
+    gsap.to("body", { css: { visibility: "visible", duration: 0 } });
+
+    // overlay animation
+    let tl1 = gsap.timeline();
+  }, []);
   return (
     <div className='home'>
       <div className='container'>
@@ -28,6 +36,20 @@ function Home() {
             We make photography look<br></br>
             effortless and stunning
           </p>
+        </div>
+      </div>
+
+      <div className='overlay'>
+        <div className='overlay-text'>
+          <div className='hide'>
+            <span className='text-show'>A great space for all the</span>
+          </div>
+          <div className='hide'>
+            <span className='text-show'>photographers looking to</span>
+          </div>
+          <div className='hide'>
+            <span className='text-show'>showcase their work</span>
+          </div>
         </div>
       </div>
     </div>
