@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import gsap from "gsap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/01 header";
 import Home from "./components/02 home";
@@ -9,6 +10,24 @@ import Footer from "./components/05 footer";
 import "./styles/app.scss";
 
 function App() {
+  useEffect(() => {
+    // prevent flashing
+    gsap.to("body", { duration: 0, css: { visibility: "visible" } });
+
+    // overlay animation
+    let tl1 = gsap.timeline();
+    tl1.to(".text-show", {
+      ease: "power1.out",
+      y: "0%",
+      duration: 1.2,
+      stagger: 0.25,
+    });
+    // .to(".overlay", {
+    //   y: "-100%",
+    //   duration: 1,
+    // });
+  }, []);
+
   return (
     <Router>
       <div className='App'>

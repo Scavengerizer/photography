@@ -13,7 +13,8 @@
 @import "./components/05\ footer.scss";
 @import "./components/06\ media\ queries.scss";
 
-body {
+body,
+html {
   visibility: hidden;
   background-color: $cream;
 }

@@ -1,16 +1,8 @@
-import React, { useEffect } from "react";
-import gsap from "gsap";
+import React from "react";
 import img1 from "../assets/images/1.png";
 import { Link } from "react-router-dom";
 
 function Home() {
-  useEffect(() => {
-    // prevent flashing
-    gsap.to("body", { css: { visibility: "visible", duration: 0 } });
-
-    // overlay animation
-    let tl1 = gsap.timeline();
-  }, []);
   return (
     <div className='home'>
       <div className='container'>
