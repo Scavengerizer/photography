@@ -56,7 +56,7 @@
     }
   }
   .overlay {
-    background-color: black;
+    background-color: $darkpurple;
     position: absolute;
     top: 0;
     left: 0;
@@ -67,12 +67,12 @@
     justify-content: center;
     align-items: center;
     .overlay-text {
-      color: white;
+      color: $cream;
       font-size: 3.5rem;
       font-family: $Pop;
       font-weight: 600;
       .hide {
-        background-color: black;
+        background-color: $darkpurple;
         overflow: hidden;
       }
       .hide span {
@@ -80,5 +80,15 @@
         display: inline-block;
       }
     }
+  }
+  .slider {
+    background-color: $red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    transform: translateY(1000%);
+    overflow-y: hidden;
   }
 }

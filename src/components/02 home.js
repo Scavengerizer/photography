@@ -44,6 +44,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className='slider'></div>
     </div>
   );
 }

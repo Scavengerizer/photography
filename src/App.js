@@ -16,16 +16,32 @@ function App() {
 
     // overlay animation
     let tl1 = gsap.timeline();
-    tl1.to(".text-show", {
-      ease: "power1.out",
-      y: "0%",
-      duration: 1.2,
-      stagger: 0.25,
-    });
-    // .to(".overlay", {
-    //   y: "-100%",
-    //   duration: 1,
-    // });
+    tl1
+      .to(".text-show", {
+        ease: "power1.out",
+        y: "0%",
+        duration: 1.2,
+        stagger: 0.25,
+      })
+      .to(".slider", {
+        ease: "power1.out",
+        y: "-1000%",
+        skewY: 2,
+        delay: 1.5,
+        duration: 3.4,
+      })
+      .to(
+        ".overlay",
+
+        {
+          ease: "power1.out",
+
+          y: "-110%",
+          duration: 1.5,
+          skewY: 2,
+        },
+        "-=3.3"
+      );
   }, []);
 
   return (
