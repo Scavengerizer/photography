@@ -110,7 +110,7 @@
   }
 }
 
-// Custom Media Queries
+// 1000px
 @media (max-width: 1000px) {
   .work {
     .work_contents {
@@ -197,6 +197,13 @@
       }
     }
   }
+  .home {
+    .overlay {
+      .overlay-text {
+        font-size: 2.75rem;
+      }
+    }
+  }
 }
 
 // 768px
@@ -279,6 +286,13 @@
       }
     }
   }
+  .home {
+    .overlay {
+      .overlay-text {
+        font-size: 2.25rem;
+      }
+    }
+  }
 }
 //600px
 @media (max-width: 600px) {
@@ -328,6 +342,16 @@
           button {
             margin-top: 2em;
           }
+        }
+      }
+    }
+  }
+  .home {
+    .overlay {
+      .overlay-text {
+        font-size: 1.75rem;
+        .hide span {
+          line-height: 1.5;
         }
       }
     }
@@ -425,13 +449,19 @@
       }
     }
   }
+  .home {
+    .overlay {
+      .overlay-text {
+        font-size: 1.4rem;
+      }
+    }
+  }
 }
 
 // 340px
 @media (max-width: 340px) {
   .contact {
     .contact_sections {
-     
       .contact_section3 {
         margin-top: -5em;
       }
